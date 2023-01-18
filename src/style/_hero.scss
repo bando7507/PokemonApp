@@ -46,3 +46,16 @@
         }
     }
 }
+
+
+@media screen and (max-width: 670px) {
+    .hero {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .hero {
+        padding: 0 1rem;
+    }
+}

@@ -34,3 +34,31 @@ export const navlist = [
       icon: <BiSupport className='pap' />
     },
   ]
+
+  export const productItem = [
+    {
+      id: 1,
+      img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png',
+      name: 'clefairy',
+      type:"fairy"
+    },
+    {
+      id: 3,
+      img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png',
+      name: 'clefairy',
+      type:"fairy"
+    },
+    {
+      id: 4,
+      img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png',
+      name: 'clefairy',
+      type:"fairy"
+    },
+    {
+      id: 5,
+      img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png',
+      name: 'clefairy',
+      type:"fairy"
+    },
+
+  ]
