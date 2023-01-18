@@ -1,0 +1,48 @@
+.hero {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/bg/poke_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0 5rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.527);
+        z-index: 1;
+    }
+
+    .hero__text {
+        margin: auto 0;
+        z-index: 100;
+        color: #fff;
+        
+        .hero__title{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .hero__desc{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero__btn{
+            cursor: pointer;
+            font-size: 1.3rem;
+            padding: .8rem 2rem;
+            color: #fff;     
+            background: crimson;
+            border-radius: 50px;
+            
+            &:hover{
+                box-shadow: rgba(250, 240, 240, 0.274) 0px 10px 36px 0px, rgba(255, 255, 255, 0.226) 0px 0px 0px 1px;
+            }
+        }
+    }
+}

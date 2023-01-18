@@ -1,0 +1,144 @@
+header {
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    z-index: 100;
+
+
+
+    .logo {
+        font-size: 2rem;
+        display: flex;
+        gap: .5rem;
+        a{
+            color: #fff;
+            text-transform: uppercase;
+        }
+        
+
+        .toggle {
+            display: none;
+            background: #fff;
+            padding: .2rem .8rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 50%;
+            transition: .3s;
+
+            svg {
+                font-size: 1.5rem;
+                background: none;
+            }
+
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+        }
+    }
+
+    .header__menu {
+        .header__list {
+            display: flex;
+            gap: 1rem;
+
+            li{
+                a{
+                    color: #fff;
+                }
+            }
+
+
+            svg {
+                display: none;
+            }
+        }
+
+    }
+
+    .fav__btn{
+
+        button{
+            cursor: pointer;            
+            display: flex;
+            gap: .5rem;
+            justify-content: flex-end;
+            padding: 1rem;
+            border-radius: 50px;
+            background: crimson;
+            color: #fff;
+            font-size: 1rem;
+
+            &:hover{
+                box-shadow: rgba(250, 240, 240, 0.274) 0px 10px 36px 0px, rgba(255, 255, 255, 0.226) 0px 0px 0px 1px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 903px) {
+    header {
+
+
+
+
+        .logo {
+            align-items: center;
+            .toggle {
+                display: block;
+            }
+        }
+
+        .header__menu {
+
+            .header__list {
+                display: none;
+            }
+
+            .mobile-nav {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 250px;
+                padding: 3rem;
+                height: 100vh;
+                background: #f1f1f1dc;
+                display: flex;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                flex-direction: column;
+                z-index: 999999;
+
+
+                li{
+                    margin-top: 1rem;
+
+                    a{
+                        font-size: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        color: #000;
+
+                        .pap{
+                            position: inherit;
+                        }
+                    }
+
+                }
+
+                .svg {
+                    display: block;
+                    position: absolute;
+                    right: 1rem;
+                    top: 1rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+    }
+}
