@@ -1,0 +1,21 @@
+.categorie{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+
+    .categorie-box{
+        background-color: aqua;
+
+
+        &:nth-child(1){
+                background: saddlebrown;
+                grid-column: 1/ span 2;
+                grid-row: 1/ span 2;
+                height: 50vh;
+        }
+    }
+
+
+
+}
