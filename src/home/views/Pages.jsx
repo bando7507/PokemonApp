@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '../../components/Header';
+import Category from './Category';
 import Home from './Home';
 
 const Pages = () => {
@@ -9,6 +10,7 @@ const Pages = () => {
         <Header />
             <Routes>
                 <Route path='/' element={ <Home />} />
+                <Route path='/category/:id' element={<Category />} />
             </Routes>
         </BrowserRouter>
     );

@@ -1,0 +1,35 @@
+.categoryhead{
+    padding: 9rem 3rem 0rem 3rem;
+
+    .categoryhead_box{
+        overflow-x: scroll;
+        width: 100%;
+        background: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem;
+        border-radius: 1.3rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+        .categoryhead_list{
+            display: flex;
+            gap: 2.5rem;
+
+            .categoryhead_item{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: .6rem;
+
+                .categoryhead_item_home{
+                    font-size: 4.5rem;
+                }
+                svg{
+                    font-size: 2.5rem;
+                    color: crimson;
+                }
+            }
+        }
+    }
+}

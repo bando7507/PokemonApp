@@ -16,7 +16,6 @@ const Productitems = () => {
                             <span>{item.name}</span>
                             <span>{item.type}</span>
                         </div>
-
                         <AiFillStar />
                     </div>
                 ))}

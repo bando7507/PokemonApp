@@ -6,8 +6,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: rgba(0, 0, 0, 0.527);
     padding: 2rem 3rem;
     z-index: 100;
+    transition: .3s;
 
 
 
@@ -15,11 +17,12 @@ header {
         font-size: 2rem;
         display: flex;
         gap: .5rem;
-        a{
+
+        a {
             color: #fff;
             text-transform: uppercase;
         }
-        
+
 
         .toggle {
             display: none;
@@ -34,7 +37,7 @@ header {
                 background: none;
             }
 
-            &:hover{
+            &:hover {
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             }
         }
@@ -45,8 +48,8 @@ header {
             display: flex;
             gap: 1rem;
 
-            li{
-                a{
+            li {
+                a {
                     color: #fff;
                 }
             }
@@ -59,10 +62,10 @@ header {
 
     }
 
-    .fav__btn{
+    .fav__btn {
 
-        button{
-            cursor: pointer;            
+        button {
+            cursor: pointer;
             display: flex;
             gap: .5rem;
             justify-content: flex-end;
@@ -72,13 +75,37 @@ header {
             color: #fff;
             font-size: 1rem;
 
-            &:hover{
+            &:hover {
                 box-shadow: rgba(250, 240, 240, 0.274) 0px 10px 36px 0px, rgba(255, 255, 255, 0.226) 0px 0px 0px 1px;
             }
         }
     }
 
+    &.active {
+        padding: 1rem 3rem;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        z-index: 999999;
+
+        .logo {
+            a {
+                color: #000;
+            }
+        }
+
+        .header__menu {
+            .header__list {
+                li {
+                    a {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
 }
+
+
 
 @media screen and (max-width: 903px) {
     header {
@@ -88,6 +115,7 @@ header {
 
         .logo {
             align-items: center;
+
             .toggle {
                 display: block;
             }
@@ -113,17 +141,17 @@ header {
                 z-index: 999999;
 
 
-                li{
+                li {
                     margin-top: 1rem;
 
-                    a{
+                    a {
                         font-size: 1.5rem;
                         display: flex;
                         align-items: center;
                         gap: 1rem;
                         color: #000;
 
-                        .pap{
+                        .pap {
                             position: inherit;
                         }
                     }

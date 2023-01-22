@@ -4,16 +4,192 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
 
-    .categorie-box{
-        background-color: aqua;
 
-
-        &:nth-child(1){
-                background: saddlebrown;
-                grid-column: 1/ span 2;
-                grid-row: 1/ span 2;
-                height: 50vh;
+    .categorie-box{        
+        cursor: pointer;
+        .categorie_content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            padding: .5rem;
+            
+            h1{
+                text-transform: capitalize;
+                font-size: 1rem;
+                color: #fff;
+                z-index: 100;
+            }
         }
+
+        &:hover{
+            transform: scale(1.02);
+        }
+        &:nth-child(1){
+            position: relative;
+            background-image: url('../assets/bg/bg_pokenom-normal.jpg');
+            height: 50vh;
+            background-size: cover;
+            background-position: center;
+            grid-column: 1/ span 2;
+            grid-row: 1/ span 2;
+            
+
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: #0000004b;
+                z-index: 1;
+            }
+        }
+
+        &:nth-child(2){
+            position: relative;
+            background-image: url('../assets/bg/bg_pokemon-fighter.jpg');
+            background-size: cover;
+            background-position: center;
+
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: #0000004b;
+            }
+        }
+
+        &:nth-child(3){
+            position: relative;
+            background-image: url('../assets/bg/bg_pokemon-flying-.jpg');
+            background-size: cover;
+            background-position: center;
+
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: #0000004b;
+            }
+        }
+
+        &:nth-child(4){
+            position: relative;
+            background-image: url('../assets/bg/bg_pokemon-poison.png');
+            background-size: cover;
+            background-position: center;
+
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: #0000004b;
+            }
+        }
+
+        &:nth-child(5){
+            position: relative;
+            background-image: url('../assets/bg/bg_pokemon-gound.jpg');
+            background-size: cover;
+            background-position: center;
+
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: #0000004b;
+            }
+        }
+
+        &:nth-child(6){
+            position: relative;
+            background-image: url('../assets/bg/bg_pokemon-rock.png');
+            height: 25vh;
+            background-size: cover;
+            background-position: center;
+
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: #0000004b;
+            }
+        }
+        &:nth-child(7){
+            position: relative;
+            background-image: url('../assets/bg/bg_pokemon-bug.png');
+            background-size: cover;
+            background-position: center;
+
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: #0000004b;
+            }
+        }
+        
+        &:nth-child(8){
+            position: relative;
+            background-image: url('../assets/bg/bg_pokemon-ghost.avif');
+            background-size: cover;
+            background-position: center;
+            
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: #0000004b;
+            }
+        }
+        &:nth-child(9){
+            position: relative;
+            background-image: url('../assets/bg/bg_pokemon-steel.webp');
+            background-size: cover;
+            background-position: center;
+            
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: #0000004b;
+            }
+        }
+
     }
 
 

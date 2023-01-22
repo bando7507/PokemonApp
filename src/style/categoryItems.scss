@@ -1,0 +1,96 @@
+.categoryItems{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+
+    .categoryItems_content{
+        .categoryItems_form{
+            padding: 1rem;
+
+            .form{
+                width: 100%;
+                background: #fff;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border-radius: 1rem;
+                margin-bottom: 1rem;
+
+                form{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: .6rem 2rem;
+
+                    input{
+                        flex: 1 100%;
+                        height: 50px;
+                        font-size: 1.3rem;
+                    }
+
+                    svg{
+                        font-size: 3rem;
+                        color: crimson;
+                    }
+                }
+            }
+        }
+    }
+
+    .categoryItems_filter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .categoryItems_filter-2{
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+
+            span{
+                padding: .8rem;
+                border: 1px solid #000;
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    .categoryItems_items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+        margin-top: 2rem ;
+
+        .categoryItems_box{
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 150px;
+            background: #f1f1f1;
+            padding: 1rem;
+            border-radius: 2rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            img{
+                position: absolute;
+                top: -3.8rem;
+                width: 5rem;
+            }
+
+            .categoryItems_box-name{
+                margin-top: 2rem;
+                color: rgb(18, 166, 216);
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+
+            .categoryItems_box-btn{
+                margin-top: 1rem;
+                span{
+                    padding: 0.5rem;
+                    border-radius: .6rem;
+                    background: lightblue;
+                }
+            }
+        }
+    }
+}

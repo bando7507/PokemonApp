@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Categories = () => {
 
@@ -17,10 +18,18 @@ const Categories = () => {
     console.log(cat);
     return (
         <section className='categorie'>
-            {cat.map((item) =>(
+            {cat.map((item, id) =>(
                 <div className='categorie-box'>
-                    {item.name}
-                </div>
+                        <Link to={`/category/${item.url.slice(31,32)}`}>        
+                        {/* <Link to={`/category/${id}`}>         */}
+                        <div className="categorie_content">
+                            <h1>
+                                {item.name}
+                                {item.url.length}
+                            </h1>
+                        </div>
+                        </Link>
+                    </div>
             ))}
         </section>
     );
