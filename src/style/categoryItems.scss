@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 1rem;
+    margin-top: 5rem;
+
 
     .categoryItems_content{
         .categoryItems_form{
@@ -57,7 +59,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 5rem;
-        margin-top: 2rem ;
+        margin-top: 5rem;
+        overflow-y: scroll;
+        height: 100vh;
+
 
         .categoryItems_box{
             position: relative;
@@ -65,19 +70,20 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 150px;
+            // height: 150px;
             background: #f1f1f1;
             padding: 1rem;
             border-radius: 2rem;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             img{
-                position: absolute;
-                top: -3.8rem;
+                // position: absolute;
+                // top: -3.8rem;
                 width: 5rem;
+                justify-self: center;
             }
 
             .categoryItems_box-name{
-                margin-top: 2rem;
+                margin-top: 1rem;
                 color: rgb(18, 166, 216);
                 text-transform: uppercase;
                 font-size: 1rem;
@@ -92,5 +98,25 @@
                 }
             }
         }
+    }
+
+    .categoryItems_content{
+        position: relative;
+
+        .categoryItems_content-img{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background: #fff;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+            border-radius: 2rem;
+
+            img{
+                width: 15rem;
+                
+            }
+        }
+
     }
 }
