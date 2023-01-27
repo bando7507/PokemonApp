@@ -1,11 +1,12 @@
 .categoryItems{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1.3fr;
     gap: 1rem;
-    margin-top: 5rem;
+    padding: 2rem 2rem 0rem 2rem;
 
 
     .categoryItems_content{
+        padding-top: 5rem ;
         .categoryItems_form{
             padding: 1rem;
 
@@ -58,10 +59,23 @@
     .categoryItems_items{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 5rem;
-        margin-top: 5rem;
+        gap: 1rem;
+        margin-top: 3rem;
+        padding: .5rem;
         overflow-y: scroll;
         height: 100vh;
+
+        &::-webkit-scrollbar{
+            border-radius: 1rem;
+            background: #f1f1f1;
+            width: 8px;
+            float: left;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            border-radius: 1rem;
+            background: rgb(179, 179, 179);
+        }
 
 
         .categoryItems_box{
@@ -83,8 +97,8 @@
             }
 
             .categoryItems_box-name{
-                margin-top: 1rem;
-                color: rgb(18, 166, 216);
+                margin-top: 1rem;   
+                color: #192a56;
                 text-transform: uppercase;
                 font-size: 1rem;
             }
@@ -111,10 +125,79 @@
             background: #fff;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
             border-radius: 2rem;
+            padding: 1rem 0;
 
             img{
-                width: 15rem;
+                width: 13rem;
                 
+            }
+
+            span{
+                margin-top: 1rem;
+                color: lightgray;
+            }
+
+            .name{
+                margin-top: .5rem;
+                text-transform: capitalize;
+                color: #192a56;
+            }
+
+            .btn{
+                padding: 0.5rem;
+                border-radius: .6rem;
+                color: #192a56;
+                text-transform: uppercase;
+                font-weight: 700;
+                background: lightblue;
+                margin-bottom: 1rem;
+            }
+
+            .entry{
+                text-transform: uppercase;
+                color: #192a56;
+                margin-bottom: 1rem;
+            }
+
+            .pokemon_desc{
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .ability{
+                text-transform: uppercase;
+                color: #192a56;
+                margin-bottom: .3rem;
+            }
+
+            .abilities{
+                font-size: 14px;
+                margin-bottom: 1rem;
+            }
+
+            .abilities_flex{
+                display: flex;
+                gap: 1rem;
+
+                h3{
+                    text-transform: uppercase;
+                    color: #192a56;
+                }
+            }
+
+            .abilities_flex-content{
+                display: flex;
+                gap: 1rem ;
+                margin-bottom: .5rem;
+                .height,
+                .weight{
+                    background: #7ba4cc44;
+                    padding: .3rem 2rem;
+                    font-size: 14px;
+                    font-weight: 500;
+                    border-radius: 1rem;
+                }
             }
         }
 

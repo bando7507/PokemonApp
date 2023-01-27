@@ -19,7 +19,7 @@ const Categories = () => {
     return (
         <section className='categorie'>
             {cat.map((item, id) =>(
-                <div className='categorie-box'>
+                <div className='categorie-box' key={id}>
                         <Link to={`/category/${item.url.slice(31,32)}`}>        
                         {/* <Link to={`/category/${id}`}> */}
                         <div className="categorie_content">
