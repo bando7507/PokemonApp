@@ -93,10 +93,21 @@ const CategoryItems = () => {
                             Abiliies
                         </h3>
 
+                        {el.abilities && el.abilities.length === 1 &&
+                        <div className='abilities'>
+                            {el.abilities[0].ability.name}
+                        </div>
+                        }
+                        {el.abilities && el.abilities.length === 2 &&
+                        <div className='abilities'>
+                            {el.abilities[0].ability.name}, {el.abilities[1].ability.name}
+                        </div>
+                        }
+                        {el.abilities && el.abilities.length === 3 &&
                         <div className='abilities'>
                             {el.abilities[0].ability.name}, {el.abilities[1].ability.name}, {el.abilities[2].ability.name}
                         </div>
-
+                        }
                         <div className='abilities_flex'>
                             <h3>Height</h3>
                             <h3>Weight</h3>

@@ -11,8 +11,8 @@ export const navlist = [
     },
     {
         id: 2,
-      text: "Download",
-      path: "/",
+      text: "Pokedex",
+      path: "/pokedex",
       icon: <AiOutlineDownload className='pap' />
     },
     {

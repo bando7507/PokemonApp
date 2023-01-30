@@ -1,0 +1,23 @@
+.pokedex{
+    padding: 5rem 3rem 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../assets/bg/bg-dot.png');
+    // background-position: center;
+    background-size: contain;
+    height: 100vh;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    // gap: 1rem;
+
+    li{
+        cursor: pointer;
+        border: 1px solid;
+        padding: .8rem 1rem;
+    }
+}
