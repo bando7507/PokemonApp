@@ -12,7 +12,7 @@ const CategoryItems = () => {
     const getData2 = async () =>{
         const api = await fetch(`https://pokeapi.co/api/v2/type/${param.id}`)
         const dataApi = await api.json()
-        getPokemon(dataApi.pokemon.slice(0, 10))
+        getPokemon(dataApi.pokemon.slice(0, 150))
     } 
 
     const getPokemon = (res) =>{

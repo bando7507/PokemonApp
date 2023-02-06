@@ -62,3 +62,32 @@ export const navlist = [
     },
 
   ]
+
+ export const slideItem = [
+  {
+    id: 1,
+    name: 'froslass',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/478.svg',
+  },
+  {
+    id: 2,
+    name: 'lucario',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg'
+  },
+
+  {
+    id: 3,
+    name: 'charizard',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg',
+  },
+  {
+    id: 4,
+    name: 'scizor',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/212.svg',
+  },
+  {
+    id: 5,
+    name: 'zapdos',
+    image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/145.svg',
+  },
+ ]
