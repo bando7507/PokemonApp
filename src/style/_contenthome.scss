@@ -3,6 +3,10 @@
         text-align: center;
         margin-bottom: 1rem;
         font-size: 2rem;
+
+        span{
+            color: crimson;
+        }
     }
     .contentHome-desc{
         text-align: center;
@@ -60,6 +64,17 @@
                 color: #fff;
                 // margin-bottom: 1rem;
             }
+        }
+
+        .teamsRight {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 15rem;
+            }
+
         }
     }
 }
